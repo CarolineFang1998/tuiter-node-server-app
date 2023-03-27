@@ -1,6 +1,7 @@
 import posts from "./tuits.js";
 let tuits = posts;
 
+// create tuit
 const createTuit = (req, res) => {
     const newTuit = req.body;
     newTuit._id = (new Date()).getTime()+'';
